@@ -28,10 +28,10 @@ You will also need the source code for jemalloc, checked out in
 ```sh
 git clone git://github.com/Percona/PerconaFT.git percona-ft
 cd percona-ft
-git clone git://github.com/Percona/jemalloc.git third_party/jemalloc
+git clone https://github.com/Percona/jemalloc.git third_party/jemalloc
 mkdir build
 cd build
-CC=gcc47 CXX=g++47 cmake \
+cmake \
     -D CMAKE_BUILD_TYPE=Debug \
     -D BUILD_TESTING=OFF \
     -D USE_VALGRIND=OFF \
